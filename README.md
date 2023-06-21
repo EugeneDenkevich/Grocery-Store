@@ -1,6 +1,7 @@
 # Grocery-Store
 Курсовой проект на Django по окончании курса от IT-Academy. Интернет-магазин продуктов питания
 <hr>
+
 ```bash
 python -m venv venv
 cd venv/Scripts
