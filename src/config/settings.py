@@ -25,12 +25,12 @@ CART_SESSION_ID = 'cart'
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = 'django-insecure-l^j)mp0(embdkh^v*n56(wv9(o_d3fir+#&1$-m=iynn06v+ck'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / env.str('DB_NAME'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
