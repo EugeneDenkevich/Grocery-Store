@@ -17,7 +17,7 @@ Including another URLconf
 from django.urls import include
 from django.contrib import admin
 from django.urls import path
-from app_grocery_shoping import views as gr_shoping
+from app import views as gr_shoping
 from django.conf import settings
 from django.conf.urls.static import static
 

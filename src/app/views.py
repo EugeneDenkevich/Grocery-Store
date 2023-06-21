@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import Product, Delivery, User
+from .models import Product, Delivery
 from .forms import AddAddressViaModelForm
 from cart.forms import CartAddProductForm
+from django.contrib.auth.models import User
 
 
 def index(request):
@@ -48,13 +49,11 @@ def add_model_address(request):
 
         if address.is_valid():
             new_address = address.save(commit=False)
-            try:
-                new_address.user = User.objects.get(email=request.user.email)
-                new_address.save()
-                address.save_m2m()
-                return redirect('thank_you')
-            except:
-                error = 'Point an email in an admin panel if you want to order something'
+            new_address.user = User.objects.get(pk=request.user.pk)
+            new_address.save()
+            address.save_m2m()
+            return redirect('thank_you')
+
 
 
     a = {'address_new': address, 'error': error}

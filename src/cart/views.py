@@ -2,7 +2,7 @@ import imp
 from tracemalloc import get_object_traceback
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
-from app_grocery_shoping.models import Product
+from app.models import Product
 from .cart import Cart
 from .forms import CartAddProductForm
 
