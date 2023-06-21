@@ -1,48 +1,12 @@
 # Grocery-Store
-
-Проект, сделанный по окончании курса "Разработка веб-приложений на Python", реализован на фреймворке Django. Представляет из себя интернет магазин продуктов питания (фруктов, овощей и мясомолочной продукции).
-
+Курсовой проект на Django по окончании курса от IT-Academy. Интернет-магазин продуктов питания
 <hr>
-
-### Проект имеет backend и frontend составляющую:
- В backend-e реализован функционал добавления/удаления продуктов, а так же процесс добавления товаров в корзину и подсчёт общей стоимости заказа.
-    Инструменты:
-    - Django ORM
-    - Django context processors
-    - OOP
-    - Venv
-    - Static functional
-    - SQLite
-    - Sessions
-    
- Во frontend-е выполнениа разметка и стилизация в локаничном стиле с преобладанием оттенков зелёного, а так же с выпадающими меню хедера страницы.
-    Инструменты:
-    - HTML
-    - CSS
-    - JavaScript
-    - Jinja
-
-# Запуск:
-
-### 1. Create and activate virtual local-environment. Installing packages
-
-###  for Windows:
-```bash
-cd Grocery-Store
-```
 ```bash
 python -m venv venv
-```
-```bash
 cd venv/Scripts
-```
-```bash
 .\activate
-```
-```bash
 cd ../..
-```
-```bash
+cd src
 pip install -r requirements.txt
 ```
 
