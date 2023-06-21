@@ -55,7 +55,6 @@ def add_model_address(request):
                 return redirect('thank_you')
             except:
                 error = 'Point an email in an admin panel if you want to order something'
-                print(error)
 
 
     a = {'address_new': address, 'error': error}
