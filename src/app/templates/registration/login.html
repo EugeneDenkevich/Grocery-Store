@@ -7,9 +7,6 @@
         {% if form.errors %}
         <p>Your username and password didn't match. Please try again.</p>
         {% endif %}
-        <p style="color:green"><b>Hint:</b></p>
-        <p style="color:chocolate">username: user</p>
-        <p style="color:chocolate">pasword: 575756qwe</p>
         <form method="post" action="{% url 'login' %}">
             {% csrf_token %}
             <table>
