@@ -59,7 +59,7 @@ def add_model_address(request):
     a = {'address_new': address, 'error': error}
 
     try:
-        ad_ad = Delivery.objects.filter(user=request.user.email)[0]
+        ad_ad = Delivery.objects.filter(user=request.user.pk)[0]
         a['ad_ad'] = ad_ad
     except:
         None
@@ -77,7 +77,7 @@ def pre_login(request):
 
 def del_address(request):
     try:
-        del_ad = Delivery.objects.filter(user=request.user.email)[0]
+        del_ad = Delivery.objects.filter(user=request.user.pk)[0]
         del_ad.delete()
         return redirect('add_address_new')
     except:
