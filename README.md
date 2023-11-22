@@ -2,6 +2,20 @@
 Курсовой проект на Django по окончании курса от IT-Academy. Интернет-магазин продуктов питания
 <hr>
 
+### Used:
+- Django
+- SQLite3
+- HTML
+- CSScart
+- JS
+
+### Done:
+- Logging in
+- Logging out
+- Address indication
+- Cart
+- Custom admin panel
+
 ```bash
 python -m venv venv
 cd venv/Scripts
